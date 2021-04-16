@@ -11,7 +11,6 @@
     "resolveJsonModule": true,
     "rootDir": "src",
     "sourceMap": true,
-    "jsx": "react-jsx",
     "strict": true,
     "target": "es2017",
     "types": ["jest", "node"],

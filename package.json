@@ -96,8 +96,7 @@
       "prettier --write --loglevel=error"
     ],
     "functions/src/**/*.{js,ts}": [
-      "cd functions/ && eslint --fix",
-      "git add"
+      "cd functions/ && eslint --fix"
     ]
   }
 }
