@@ -1,14 +1,15 @@
 {
   "name": "functions",
   "scripts": {
-    "lint": "eslint --ext .js,.ts .",
     "build": "npm run list && tsc",
-    "serve": "npm run build && firebase emulators:start --only functions",
+    "lint": "eslint 'src/**/*.{js,ts}'",
+    "lint:fix": "eslint --fix 'src/**/*.{js,ts}'",
+    "logs": "firebase functions:log",
+    "serve": "npm run build && firebase serve --only functions",
     "shell": "npm run build && firebase functions:shell",
     "start": "npm run shell",
     "test": "jest",
-    "deploy": "firebase deploy --only functions",
-    "logs": "firebase functions:log"
+    "deploy": "firebase deploy --only functions"
   },
   "engines": {
     "node": "10"

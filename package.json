@@ -95,8 +95,9 @@
     "{public,src}/**/*.{gql,graphql,json}": [
       "prettier --write --loglevel=error"
     ],
-    "functions/src/**/*.{jsx,tsx,js,ts}": [
-      " eslint --fix"
+    "functions/src/**/*.{js,ts}": [
+      "cd functions/ && eslint --fix",
+      "git add"
     ]
   }
 }
